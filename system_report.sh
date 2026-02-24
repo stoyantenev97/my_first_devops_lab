@@ -21,3 +21,4 @@ rm *.tmp
 ls
 echo "Deleting complete"
 echo "End of script"
+echo "Audit complete at $(date)"
