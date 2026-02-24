@@ -2,7 +2,7 @@
 echo "This script will create a report.txt file with cpu model and available RAM"
 #this will print current operation
 echo "Starting system audit for user: $(whoami) "
-touch report.txt#this will see the cpu info, give it to grep for filtering and write it to the file
+#this will see the cpu info, give it to grep for filtering and write it to the file
 echo "Generating report file and populating it"
 cat /proc/cpuinfo | grep "model name" | uniq >report.txt
 #this should add the ram info into the same file if i wrote it correctly
